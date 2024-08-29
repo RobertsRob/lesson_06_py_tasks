@@ -72,6 +72,9 @@ for i in range(1, len(numbers), 2):
     numbers[i] /= 2
 print(numbers)
 
-
 # 11.task
-
+# Создайте список из 8 чисел. Найдите все числа, которые делятся одновременно на 3 и на 5, и отсортируйте их по возрастанию. Выведите полученный отсортированный список.
+numbers = [15, 30, 22, 45, 12, 18, 55, 60]
+filtered_numbers = [num for num in numbers if num % 3 == 0 and num % 5 == 0]
+filtered_numbers.sort()
+print(filtered_numbers)
