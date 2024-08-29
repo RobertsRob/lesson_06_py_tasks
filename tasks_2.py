@@ -65,13 +65,13 @@ numbers.sort()
 print(numbers)
 
 # 10.task
+# Напишите программу, которая создает список из 6 чисел, сортирует его по возрастанию, а затем заменяет каждый второй элемент на его половину.
+numbers = [5, 15, 10, 20, 25, 30]
+numbers.sort()
+for i in range(1, len(numbers), 2):
+    numbers[i] /= 2
+print(numbers)
+
 
 # 11.task
 
-# 12.task
-
-# 13.task
-
-# 14.task
-
-# 15.task
