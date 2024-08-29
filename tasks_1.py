@@ -125,5 +125,18 @@ for num in numbers:
 print(evens)
 
 # 14.task
+# Напишите программу, которая создает список из 5 чисел и заменяет все отрицательные числа на их абсолютные значения.
+numbers = [-4, 5, -2, -7, 9]
+for i in range(len(numbers)):
+    if numbers[i] < 0:
+        numbers[i] = -numbers[i]
+print(numbers)
 
 # 15.task
+# Напишите программу, которая создает список из 5 чисел и сортирует его в порядке возрастания.
+numbers = [34, 7, 23, 32, 5]
+for i in range(len(numbers)):
+    for j in range(i + 1, len(numbers)):
+        if numbers[i] > numbers[j]:
+            numbers[i], numbers[j] = numbers[j], numbers[i]
+print(numbers)
