@@ -80,10 +80,40 @@ reversed_numbers = numbers[::-1]
 print(reversed_numbers)
 
 # 10.task
+# Создайте список из 4 строк, и найдите строку, которая имеет наибольшую длину.
+strings = ["one", "three", "fourteen", "six"]
+longest = strings[0]
+for s in strings:
+    if len(s) > len(longest):
+        longest = s
+print(longest)
 
 # 11.task
+# Напишите программу, которая создает список из 5 чисел и удаляет все числа, которые меньше среднего значения.
+numbers = [10, 20, 30, 40, 50]
+
+total_sum = 0
+for num in numbers:
+    total_sum += num
+average = total_sum / len(numbers)
+
+filtered_list = []
+for num in numbers:
+    if num >= average:
+        filtered_list.append(num)
+print(filtered_list)
 
 # 12.task
+# Создайте список из 5 элементов и найдите второй по величине элемент, не используя встроенные функции.
+numbers = [10, 20, 30, 40, 50]
+first_max = second_max = float('-inf')
+for num in numbers:
+    if num > first_max:
+        second_max = first_max
+        first_max = num
+    elif num > second_max and num != first_max:
+        second_max = num
+print(second_max)
 
 # 13.task
 
