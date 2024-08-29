@@ -116,6 +116,13 @@ for num in numbers:
 print(second_max)
 
 # 13.task
+# Создайте список из 5 чисел и создайте новый список, который содержит только те числа, которые являются четными из первого списка.
+numbers = [1, 2, 3, 4, 5]
+evens = []
+for num in numbers:
+    if num % 2 == 0:
+        evens.append(num)
+print(evens)
 
 # 14.task
 
