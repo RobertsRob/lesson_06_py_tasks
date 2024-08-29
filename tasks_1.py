@@ -38,13 +38,46 @@ for number in numbers:
         product *= number
 
 print(product)
+
 # 6.task
+# Создайте список из 7 чисел и найдите максимальный элемент без использования встроенных функций.
+numbers = [10, 20, 30, 40, 50, 60, 70]
+max_value = numbers[0]
+for num in numbers:
+    if num > max_value:
+        max_value = num
+print(max_value)
 
 # 7.task
+# Напишите программу, которая создает список из 5 строк и удаляет строку по индексу, введенному пользователем, при этом проверая ведёный индекс на достоверность. 
+strings = ["a", "b", "c", "d", "e"]
+index = int(input("Enter index to remove: "))
+if 0 <= index < len(strings):
+    del strings[index]
+print(strings)
 
 # 8.task
+# Создайте список из 5 чисел и найдите их среднее значение.
+numbers = [10, 20, 30, 40, 50]
+total_sum = 0
+for num in numbers:
+    total_sum += num
+average = total_sum / len(numbers)
+print(average)
 
 # 9.task
+# Напишите программу, которая меняет порядок элементов списка на противоположный.
+# good:
+numbers = [1, 2, 3, 4, 5, 6]
+reversed_list = []
+for num in numbers:
+    reversed_list.insert(0, num)
+print(reversed_list)
+
+# better:
+numbers = [1, 2, 3, 4, 5, 6]
+reversed_numbers = numbers[::-1]
+print(reversed_numbers)
 
 # 10.task
 
