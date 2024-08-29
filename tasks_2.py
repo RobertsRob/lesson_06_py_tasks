@@ -56,6 +56,13 @@ for i in range(len(numbers)):
 print(numbers)
 
 # 9.task
+# Напишите программу, которая создает список из 6 чисел и заменяет все нечетные числа на их кубы, а затем сортирует список по возрастанию.
+numbers = [2, 3, 7, 6, 9, 12]
+for i in range(len(numbers)):
+    if numbers[i] % 2 != 0:
+        numbers[i] = numbers[i] ** 3
+numbers.sort()
+print(numbers)
 
 # 10.task
 
